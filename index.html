@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EcoMarket</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="EcoMarket - Compra productos ecológicos de alta calidad a precios asequibles">
+    <meta name="keywords" content="productos ecológicos, mercado online, ecofriendly, compras verdes, EcoMarket">
+</head>
+<body>
+    <body>
+        <div id="main-container">
+            <header>
+                <!-- Botón para alternar entre modo oscuro y claro -->
+                <button id="theme-toggle-btn">Modo Oscuro</button>
+            </header>
+    
+            <main>
+                <!-- Filtro de precio con botón para restablecer -->
+                <section>
+                    <h2>Filtrar productos por precio</h2>
+                    <input type="range" id="price-filter" min="0" max="1000" step="10">
+                    <span id="price-value">$0</span>
+                    <button id="reset-price-filter">Restablecer Filtro</button>
+                </section>
+    
+                <!-- Barra de búsqueda -->
+                <section>
+                    <h2>Buscar productos</h2>
+                    <input type="text" id="search-bar" placeholder="Buscar productos...">
+                    <div id="search-results"></div>
+                </section>
+    
+                <!-- Lista de productos -->
+                <section class="products">
+                    <div class="product" data-price="199.99">
+                        <h3 class="product-name">Producto A</h3>
+                        <p>Precio: $199.99</p>
+                        <button class="add-to-cart" data-product-name="Producto A" data-product-price="199.99">Añadir al carrito</button>
+                    </div>
+                    <div class="product" data-price="99.99">
+                        <h3 class="product-name">Producto B</h3>
+                        <p>Precio: $99.99</p>
+                        <button class="add-to-cart" data-product-name="Producto B" data-product-price="99.99">Añadir al carrito</button>
+                    </div>
+                </section>
+    
+                <!-- Carrito con botón para vaciar -->
+                <section id="cart">
+                    <h3>Tu Carrito</h3>
+                    <div id="cart-items"></div>
+                    <button id="clear-cart">Vaciar Carrito</button>
+                </section>
+            </main>
+    
+            <!-- Popup de promoción con botón de cierre -->
+            <div id="promo-popup" aria-live="assertive">
+                <p>¡Oferta especial! 10% de descuento en todos los productos.</p>
+                <button id="close-popup" aria-label="Cerrar oferta">Cerrar</button>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+</body>
+</html>   
+        

@@ -1,0 +1,82 @@
+/* Estilo del contenedor principal */
+#main-container {
+    width: 800px;
+    height: 400px;
+    margin: 50px auto; /* Centrado vertical y horizontal */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco */
+    overflow-y: auto; /* Habilitar scroll vertical si el contenido supera el tamaño */
+    font-family: 'Roboto', sans-serif; /* Fuente global */
+}
+
+/* General */
+body {
+    background-color: #f4f4f4; /* Fondo del sitio */
+    margin: 0;
+    padding: 0;
+}
+
+/* Centrar texto en header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Encabezados */
+h2, h3 {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Botones */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Popup */
+#promo-popup {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Oculto por defecto */
+}
+
+/* Productos */
+.products {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.product {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#cart {
+    margin-top: 20px;
+}
